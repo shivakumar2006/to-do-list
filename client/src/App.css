@@ -1,16 +1,24 @@
-html, body {
+html body {
   padding: 0;
   margin: 0;
   height: 100%;
-  background-color: #ADA8B6;
+  background-color: #573280;
 }
 
 .App {
  width: 80%;
  margin: 0 auto;
  margin-top: 50px;
- background-color: #ADA8B6;
+ background-color: #573280;
  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #573280;
+  border-radius: 8px;
 }
 
 .header {
