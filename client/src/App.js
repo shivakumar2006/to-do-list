@@ -7,9 +7,11 @@ import ToDoList from './ToDoList'
 
 const App = () => {
   return (
+  <div className="App">
     <Container>
       <ToDoList />
     </Container>
+  </div>
   )
 }
 
