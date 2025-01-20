@@ -9,4 +9,6 @@
 [context.production.environment]
   REACT_APP_BACKEND_URL = "https://to-do-list-4iee.onrender.com"  
 
-      
+[functions]
+  directory = "client/functions"
+  node_bundler = "esbuild"
