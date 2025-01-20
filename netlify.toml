@@ -10,5 +10,5 @@
   REACT_APP_BACKEND_URL = "https://to-do-list-4iee.onrender.com"  # Backend API URL for production
 
 [functions]
-  directory = "server/functions" # If you have serverless functions in the 'server' folder
+  directory = "client/functions" # If you have serverless functions in the 'server' folder
   node_bundler = "esbuild"       # Optional: Use esbuild for serverless functions
