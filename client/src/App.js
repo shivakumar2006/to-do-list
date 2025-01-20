@@ -8,7 +8,7 @@ import ToDoList from './ToDoList'
 const App = () => {
   return (
   <div className="App">
-    <Container>
+    <Container className="container">
       <ToDoList />
     </Container>
   </div>

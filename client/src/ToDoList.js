@@ -3,7 +3,7 @@ import axios from "axios";
 import { Card, Header, Form, Input, Icon } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css"; // Ensure semantic UI styles are loaded
 
-const endpoint = "https://to-do-list-4iee.onrender.com";  
+const endpoint = "http://localhost:9000";  
 
 class ToDoList extends Component {
   constructor(props) {
