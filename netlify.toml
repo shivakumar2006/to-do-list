@@ -1,14 +1,14 @@
 [build]
-  base = "to-do-list/client"  # Set the base directory to 'client'
-  publish = "to-do-list/client/build"  # Output directory after build
+  base = "to-do-list/client"  # Set the base directory to 'client' folder
+  publish = "to-do-list/client/build"  # Output directory after the build is completed
   command = "yarn build"  # Build command, using yarn
 
 [build.environment]
-  NODE_VERSION = "18"  # Specify the Node.js version to use
+  NODE_VERSION = "18"  # Specify the Node.js version to use, change to 18 as per your requirements
 
 [context.production.environment]
-  REACT_APP_BACKEND_URL = "https://to-do-list-4iee.onrender.com"  # Set backend URL
+  REACT_APP_BACKEND_URL = "https://to-do-list-4iee.onrender.com"  # Set the backend URL for the frontend to interact with
 
 [functions]
-  directory = "to-do-list/client/netlify/functions"  # Point to the functions directory
-  node_bundler = "esbuild"  # Optional: Define a bundler for serverless functions
+  directory = "to-do-list/client/netlify/functions"  # Point to the serverless functions directory
+  node_bundler = "esbuild"  # Optional: Use esbuild for bundling serverless functions
