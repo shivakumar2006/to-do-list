@@ -4,7 +4,7 @@
   command = "yarn build"  # Build command, using yarn
 
 [build.environment]
-  NODE_VERSION = "16"  # Specify the Node.js version to use
+  NODE_VERSION = "18"  # Specify the Node.js version to use
 
 [context.production.environment]
   REACT_APP_BACKEND_URL = "https://to-do-list-4iee.onrender.com"  # Set backend URL
