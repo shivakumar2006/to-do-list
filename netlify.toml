@@ -1,10 +1,10 @@
 [build]
-  base = "to-do-list/client"  
-  publish = "to-do-list/client/build"  
-  command = "yarn build"  
+  base = "to-do-list/client"  # Set base directory to 'client' folder
+  publish = "to-do-list/client/build"  # Output directory after build
+  command = "yarn build"  # Build command, using yarn
 
 [build.environment]
-  NODE_VERSION = "16"  
+  NODE_VERSION = "16"  # Specify the Node.js version to use, for example, 16
 
 [context.production.environment]
-  REACT_APP_BACKEND_URL = "https://to-do-list-4iee.onrender.com"  
+  REACT_APP_BACKEND_URL = "https://to-do-list-4iee.onrender.com"  # Your backend URL
