@@ -1,9 +1,14 @@
 [build]
-  publish = "build"
-  command = "yarn build"
+  base = "client"                # Set the base directory to 'client'
+  publish = "client/build"       # Specify the build output directory
+  command = "yarn build"         # Command to build the project
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "18"            # Node.js version (adjust as needed)
+
+[context.production.environment]
+  REACT_APP_BACKEND_URL = "https://to-do-list-4iee.onrender.com"  # Backend API URL for production
 
 [functions]
-  directory = "netlify/functions"
+  directory = "server/functions" # If you have serverless functions in the 'server' folder
+  node_bundler = "esbuild"       # Optional: Use esbuild for serverless functions
